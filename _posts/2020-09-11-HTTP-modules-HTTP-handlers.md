@@ -12,16 +12,17 @@ HTTP modules overview
 Modules are called before and after the handler executes. Modules enable developers to intercept, participate in, or modify each individual request. Modules implement the IHttpModule interface, which is located in the System.Web namespace.
 
 Events:
-    1. BeginRequest
-    2. AuthentcateREquest
-    3. AuthorizeRequest
-    4. ResolveRequestCache
-    5. AcquireRequestState
-    6. PreRequestHandlerExecute
-    7. PostRequestHandlerExecute
-    8. ReleaseRequestState
-    9. UpdateRequestCache
-    10.EndRequest
+
+1. BeginRequest
+2. AuthentcateREquest
+3. AuthorizeRequest
+4. ResolveRequestCache
+5. AcquireRequestState
+6. PreRequestHandlerExecute
+7. PostRequestHandlerExecute
+8. ReleaseRequestState
+9. UpdateRequestCache
+10. EndRequest
 
 
 Source: https://docs.microsoft.com/en-us/troubleshoot/aspnet/http-modules-handlers
