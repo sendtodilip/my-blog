@@ -31,11 +31,19 @@ github_username:  jekyll
 # Fields minima uses, but are not defaulted with the jekyll new command
 # Auther is the default for post, the atom free, and is used in the footer.
 auther: Bill Raymond
+linkedin_username: williamraymond
+youtube_username: ProjectnationBill
 
 # New fields not defaulted by jekyll-new with the ninima theme
 # Add a copyright. A copyrigh tsymbol and year will be added automatically
 # copyright: Company Name, Inc.
 copyright: "Cosmos LLC"
+
+# title-logo is anew field that, when used, displayes alogo
+# instead of custom text, ideally, image is 50px high and take up 
+# minimal horizonal space, Tested witha new root "images" folder e.g.: 
+# title-log: /images/my-logo.png (or JPG, etc.)
+title-logo: /images/title_logo.png
 
 # Build settings
 theme: minima
