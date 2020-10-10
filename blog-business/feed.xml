@@ -19,4 +19,16 @@
     {%- endif -%}
     </name>
   </author>
+  {%- for post in site.posts limit: 20 -%}{%- if post.category=="Business" -%}
+  <entry>
+    <title>{{- post.title -}}</title>
+    <id>{{- site.url -}}{{- site.baseurl -}}{{- post.url -}}</id>
+    <updated>{{- site.time | date_to_xmlschema -}}</updated>
+    <summary>
+    {%- if post.excerpt -%}
+        {{- post.excerpt | strip_html | lstrip | rstrip -}}
+    {%- endif -%}
+    </summary>
+  </entry>
+  {%- endif -%}  {%- endfor -%}
 </feed>
