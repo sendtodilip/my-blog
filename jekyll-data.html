@@ -23,6 +23,29 @@
             <p>Page title: {{page.title}}</p>
         {% endif %}
     {% endfor %}
+
+    <h2>All other posts</h2>
+    {% for post in site.posts offset:1 %}
+       <p>{{post.title}}</p> 
+    {% endfor %}
+
+    <h2>Plus one more post</h2>
+    {% for post in site.posts offset:1 limit: 1 %}
+       <p>{{post.title}}</p> 
+    {% endfor %}
+
+    <h2>North America blog post</h2>
+    {% assign naPost = site.posts | where: "region", "North America" %}
+    {% for post in naPost %}
+        <p>{{post.title}}</p>
+    {% endfor %}
+
+    <h2>Post with link</h2>
+    {%- for post in site.posts -%}
+        <p></p>
+        <a href="{{- post.url | relative_url -}}">{{post.title}}</a>
+    {%- endfor -%}
+
 </body>
 
 </html>

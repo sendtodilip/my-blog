@@ -3,6 +3,7 @@ layout: post
 title:  "My first post!"
 date:   2020-09-09 23:42:47 +0530
 categories: jekyll update
+region: "North America"
 ---
 welcome to my first post!
 
