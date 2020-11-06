@@ -1,0 +1,13 @@
+{
+    "attribute": "Main navigation items",
+    "items": [
+        {
+            "title": "Home",
+            "url": "/index.html"
+        },
+        {
+            "title": "About",
+            "url": "/about.html"
+        }
+    ]
+}
