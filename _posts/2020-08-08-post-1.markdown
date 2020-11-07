@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Post 1!"
+date:   2020-08-08 23:42:47 +0530
+categories: jekyll update
+image: /assets/images/image1.jpg
+---
+Post1
+
+<!-- ![alternate text]({{ page.image | relative_url }}) -->

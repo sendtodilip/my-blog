@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Post 2!"
+date:   2020-08-09 23:42:47 +0530
+categories: jekyll update
+image: /assets/images/image2.jpg
+---
+post2
