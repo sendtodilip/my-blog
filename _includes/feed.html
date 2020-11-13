@@ -1,0 +1,6 @@
+<seciton class="feed">
+    {%- assign feedPosts = site.posts | where: 'categories', feedType -%}
+    {%- for post in feedPosts -%}
+        <p>Title: {{post.title}}</p>
+    {%- endfor -%}
+</seciton>
