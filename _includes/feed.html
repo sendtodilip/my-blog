@@ -1,6 +1,6 @@
-<seciton class="feed">
+<seciton class="{{sectionName}}">
     {%- assign feedPosts = site.posts | where: 'categories', feedType -%}
-    {%- for post in feedPosts -%}
+    {%- for post in feedPosts offset: displayOffset limit: displayLimit -%}
     <div class="feed-card">
         <div class="card-image">
             {%- assign postImage = post.image | relative_url -%}
@@ -14,7 +14,8 @@
         <div class="card-content">
             <div class="card-title">
             {%- assign postTitle = post.title | escape -%}
-            <sapn class="title">{{postTitle}}</sapn>
+            {%- assign postUrl = post.url | relative_url -%}
+            <sapn class="title"><a href="{{postUrl}}" class="post-link">{{postTitle}}</a></sapn>
             </div>
             <div class="excerpt">
                 {%- assign postExcerpt = post.excerpt | strip_html | escape -%}
