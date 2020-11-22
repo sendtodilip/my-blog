@@ -45,6 +45,9 @@ copyright: "Cosmos LLC"
 # title-log: /images/my-logo.png (or JPG, etc.)
 title-logo: /images/title_logo.png
 
+# only get the first sentence for the excerpt
+# excerpt_separator: .
+
 # Build settings
 theme: minima
 plugins:
